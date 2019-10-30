@@ -108,8 +108,8 @@ server <- shinyServer(function(input, output) {
     }
     else {
       radioId <- paste0("radio", imagePages$page)
-      print(input$radioId)
-      input$radioId
+      print(input[[radioId]])
+      input[[radioId]]
     }
   })
 
